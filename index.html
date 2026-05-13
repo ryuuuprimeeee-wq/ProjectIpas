@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Ipas</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <body class="bg-[#0f172a] text-white">
+
+    <!-- LANDING PAGE -->
+    <div id="landing-page" class="min-h-screen flex flex-col">
+        <nav class="flex items-center justify-between px-8 py-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="compass" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-2xl font-bold">Info<span class="text-emerald-500">Lokal</span> Bogor</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#">Informasi</a>
+                <a href="#" class="text-emerald-400">Beranda</a>
+                <button onclick="showApp()">Jelajah</button>
+                <button class="px-5 py-2 border border-slate-700 rounded-lg hover:border-emerald-500">Masuk</button>
+            </div>
+        </nav>
+
+        <div class="flex-1 flex flex-col items-center justify-center text-center px-6">
+            <div class="space-y-6">
+                <p class="text-emerald-400 font-bold tracking-[0.3em] text-xs">PUSAT INFORMASI PARIWISATA</p>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">Eksplorasi Keajaiban <br><span class="text-emerald-400">Kota Hujan Bogor</span></h1>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Temukan destinasi terbaik, kuliner legendaris, dan event budaya menarik hanya dalam satu platform.</p>
+                <div class="pt-8 flex gap-4 justify-center">
+                    <button onclick="showApp()" class="px-10 py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-lg shadow-2xl transition-all">Jelajah Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APP/DASHBOARD -->
+    <div id="main-app" class="hide min-h-screen bg-slate-50 text-slate-800 flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white border-r border-emerald-50 h-screen flex flex-col fixed">
+            <div class="p-6 border-b flex items-center gap-2">
+                <i data-lucide="compass" class="text-emerald-600 w-6 h-6"></i>
+                <span class="text-xl font-bold text-slate-900">Info<span class="text-emerald-500">Lokal</span></span>
+            </div>
+            <nav class="p-4 space-y-2 flex-1">
+                <button onclick="filterCategory('Semua')" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-emerald-600 text-white font-medium shadow-lg">
+                    <i data-lucide="home" class="w-5 h-5"></i> Semua
+                </button>
+                <button onclick="filterCategory('Kuliner')" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-emerald-50 text-slate-600">
+                    <i data-lucide="utensils" class="w-5 h-5"></i> Kuliner
+                </button>
+                <button onclick="filterCategory('Destinasi')" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-emerald-50 text-slate-600">
+                    <i data-lucide="map" class="w-5 h-5"></i> Destinasi
+                </button>
+                <button onclick="filterCategory('Event')" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-emerald-50 text-slate-600">
+                    <i data-lucide="calendar" class="w-5 h-5"></i> Event
+                </button>
+            </nav>
+            <div class="p-4">
+                <button onclick="hideApp()" class="w-full flex items-center gap-2 p-3 text-slate-400 hover:text-emerald-600 text-sm font-bold transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 flex-1">
+            <header class="sticky top-0 bg-white/80 backdrop-blur-md p-6 border-b flex items-center justify-between">
+                <div class="relative w-96">
+                    <i data-lucide="search" class="absolute left-4 top-3 w-4 h-4 text-slate-400"></i>
+                    <input type="text" onkeyup="searchLoc(this.value)" placeholder="Cari info Bogor..." class="w-full pl-10 pr-4 py-2 bg-slate-100 rounded-full border-transparent focus:bg-white focus:ring-2 focus:ring-emerald-500 outline-none text-sm transition-all">
+                </div>
+                <div class="flex items-center gap-2 text-emerald-600 font-bold text-sm">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i> Bogor, Jawa Barat
+                </div>
+            </header>
+
+            <div id="content" class="p-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Cards injected by JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>
