@@ -40,7 +40,7 @@
           <button class="btn-explore" onclick="openApp()">
             Mulai Jelajah →
           </button>
-          <button class="btn-outline" onclick="openApp()">Lihat Semua Info</button>
+          <button class="btn-outline" onclick="scrollToCategories()">Lihat Semua Info ↓</button>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -61,7 +61,7 @@
       </div>
     </section>
 
-    <section class="categories-section">
+    <section class="categories-section" id="categoriesSection">
       <h2>Kategori Informasi</h2>
       <p class="section-subtitle">Pilih kategori yang ingin kamu jelajahi</p>
       <div class="cat-grid">
@@ -164,6 +164,7 @@
         <div class="location-badge">Bogor, Jawa Barat</div>
       </header>
 
+      <div class="filter-counter" id="filterCounter"></div>
       <div class="content-body" id="cardContainer">
         <!-- Cards will be generated here -->
       </div>

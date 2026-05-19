@@ -146,6 +146,14 @@ function closeApp() {
   closeSidebar();
 }
 
+// Scroll halus ke section kategori di landing page
+function scrollToCategories() {
+  const section = document.getElementById("categoriesSection");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 // ===== HAMBURGER MENU =====
 function toggleSidebar() {
   const sidebar = document.getElementById("mainSidebar");
@@ -312,7 +320,29 @@ function handleFilter() {
     return matchesSearch && matchesCat;
   });
 
+  // Update counter
+  updateCounter(filtered.length, searchVal);
+
   renderCards(filtered);
+}
+
+function updateCounter(count, searchVal) {
+  const counter = document.getElementById("filterCounter");
+  if (!counter) return;
+
+  const catLabel = currentCategory === "Semua" ? "Semua Kategori" : currentCategory;
+  const searchLabel = searchVal ? ` · Pencarian: "${searchVal}"` : "";
+  const resultWord = count === 1 ? "hasil" : "hasil";
+
+  counter.innerHTML = `
+    <span class="counter-num">${count}</span>
+    <span class="counter-text">${resultWord} ditemukan</span>
+    <span class="counter-divider">·</span>
+    <span class="counter-cat">${catLabel}${searchLabel}</span>
+  `;
+  counter.classList.remove("counter-fade");
+  void counter.offsetWidth; // trigger reflow untuk restart animasi
+  counter.classList.add("counter-fade");
 }
 
 function handleSearch() {

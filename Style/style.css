@@ -463,6 +463,55 @@ header {
   margin: 0 auto;
 }
 
+/* ===== FILTER COUNTER ===== */
+.filter-counter {
+  max-width: 1000px;
+  margin: 24px auto 0;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-height: 28px;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.filter-counter.counter-fade {
+  animation: fadeSlideIn 0.25s ease forwards;
+}
+
+.counter-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.counter-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+.counter-divider {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.counter-cat {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--primary);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
