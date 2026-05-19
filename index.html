@@ -129,7 +129,7 @@
 
   <!-- MAIN APP DASHBOARD -->
   <div id="main-app">
-    <aside class="sidebar">
+    <aside class="sidebar" id="mainSidebar">
       <div class="sidebar-header">Info<span>Lokal</span></div>
       <div class="sidebar-menu">
         <button class="active" onclick="setCategory('Semua', this)">
@@ -147,8 +147,17 @@
       </div>
     </aside>
 
+    <!-- Overlay untuk menutup sidebar di mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
     <main class="main-content">
       <header>
+        <!-- Tombol hamburger (hanya muncul di mobile) -->
+        <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleSidebar()" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="search-box">
           <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Cari info lokal Bogor..." />
         </div>

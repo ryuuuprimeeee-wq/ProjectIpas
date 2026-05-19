@@ -500,11 +500,48 @@ header {
 }
 
 .card-tag {
+  display: inline-block;
   font-size: 10px;
-  font-weight: bold;
-  color: var(--primary);
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Warna tag per kategori */
+.tag-kuliner {
+  background: #fef3c7;
+  color: #b45309;
+}
+.tag-destinasi {
+  background: #dcfce7;
+  color: #15803d;
+}
+.tag-event {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.tag-berita {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+/* Tanggal publikasi di card */
+.card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-muted);
   margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.card-date svg {
+  color: #7c3aed;
+  flex-shrink: 0;
 }
 
 .card h2 {
@@ -646,7 +683,6 @@ header {
   position: absolute;
   bottom: 16px;
   left: 16px;
-  background: var(--primary);
   color: var(--white);
   font-size: 11px;
   font-weight: 700;
@@ -654,10 +690,31 @@ header {
   letter-spacing: 0.08em;
   padding: 6px 14px;
   border-radius: 8px;
+  background: var(--primary);
 }
+
+/* Warna modal tag per kategori */
+.modal-tag-kuliner  { background: #d97706; }
+.modal-tag-destinasi{ background: #16a34a; }
+.modal-tag-event    { background: #2563eb; }
+.modal-tag-berita   { background: #7c3aed; }
 
 .modal-body {
   padding: 28px;
+}
+
+/* Tanggal publikasi di modal */
+.modal-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c3aed;
+  background: #f5f3ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
 }
 
 .modal-title {
@@ -729,6 +786,16 @@ header {
   box-shadow: 0 4px 16px rgba(22, 163, 74, 0.3);
 }
 
+/* Tombol khusus Berita — warna ungu */
+.btn-maps.btn-berita {
+  background: #7c3aed;
+}
+
+.btn-maps.btn-berita:hover {
+  background: #6d28d9;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.35);
+}
+
 .maps-icon {
   font-size: 20px;
 }
@@ -736,6 +803,16 @@ header {
 .maps-arrow {
   font-size: 16px;
   opacity: 0.7;
+}
+
+/* ===== HAMBURGER BUTTON (sembunyikan di desktop) ===== */
+.hamburger-btn {
+  display: none;
+}
+
+/* ===== SIDEBAR OVERLAY (sembunyikan di desktop) ===== */
+.sidebar-overlay {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -794,29 +871,100 @@ header {
     gap: 12px;
   }
 
-  /* Dashboard sidebar */
+  /* ===== HAMBURGER BUTTON ===== */
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    order: -1;
+  }
+
+  .hamburger-btn:hover {
+    background: var(--bg-light);
+  }
+
+  .hamburger-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-dark);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Animasi hamburger → X saat sidebar terbuka */
+  .hamburger-btn.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger-btn.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .hamburger-btn.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ===== SIDEBAR MOBILE ===== */
   .sidebar {
-    width: 80px;
+    width: 260px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
   }
 
-  .sidebar-menu span,
-  .sidebar-header span,
-  .sidebar-footer span {
-    display: none;
+  .sidebar.open {
+    transform: translateX(0);
   }
 
+  /* ===== OVERLAY ===== */
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 199;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Content penuh karena sidebar sudah overlay */
   .main-content {
-    margin-left: 80px;
-    width: calc(100% - 80px);
+    margin-left: 0;
+    width: 100%;
   }
 
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
   .search-box {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
+    width: auto;
+  }
+
+  .location-badge {
+    display: none;
   }
 }
