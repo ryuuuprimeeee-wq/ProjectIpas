@@ -520,9 +520,10 @@ header {
 
 .card {
   background-color: var(--white);
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   transition: 0.3s;
@@ -532,13 +533,48 @@ header {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  border-color: var(--primary-light);
+}
+
+.card-img-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .card-img {
-  height: 200px;
+  height: 260px;
   width: 100%;
   object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-tags {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-tag {
+  background: #15803d; /* dark green */
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.tag-rating {
+  background: var(--white);
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .card-info {
@@ -548,100 +584,49 @@ header {
   flex-direction: column;
 }
 
-.card-tag {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 6px;
-  padding: 4px 10px;
-  border-radius: 6px;
-}
-
-/* Warna tag per kategori */
-.tag-kuliner {
-  background: #fef3c7;
-  color: #b45309;
-}
-.tag-destinasi {
-  background: #dcfce7;
-  color: #15803d;
-}
-.tag-event {
-  background: #dbeafe;
-  color: #1d4ed8;
-}
-.tag-berita {
-  background: #ede9fe;
-  color: #6d28d9;
-}
-
-/* Tanggal publikasi di card */
-.card-date {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 11px;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.card-date svg {
-  color: #7c3aed;
-  flex-shrink: 0;
-}
-
 .card h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--text-dark);
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.card-loc {
+  font-size: 16px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.card-loc svg {
+  color: #94a3b8;
 }
 
 .card p {
-  font-size: 14px;
-  color: var(--text-muted);
+  font-size: 16px;
+  color: #64748b;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-footer {
   margin-top: auto;
-  padding-top: 15px;
-  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
 
-.card-loc {
-  font-size: 12px;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.card-loc svg {
-  color: var(--primary);
-  flex-shrink: 0;
-}
-
-.btn-detail {
-  color: var(--primary);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 13px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: color 0.2s;
-  padding: 0;
-}
-
-.btn-detail:hover {
-  color: var(--primary-dark);
+.btn-detail-text {
+  color: #16a34a; /* primary green */
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .empty-state {
