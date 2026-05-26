@@ -209,16 +209,16 @@ const locations = [
   },
   {
     id: 17,
-    name: "",
+    name: "Museum Nasional Sejarah Alam Indonesia",
     category: "Destinasi",
-    catDisplay: "Rekreasi Keluarga",
+    catDisplay: "Destinasi Sejarah",
     rating: "4.6",
-    loc: "",
-    desc: ".",
-    img: "",
-    maps: "",
+    loc: "Bogor Tengah",
+    desc: "Museum modern dan edukatif yang menyajikan sejarah alami nusantara serta keterkaitan budaya masyarakat Indonesia dalam memanfaatkan keanekaragaman hayati dan tanaman (etnobotani).",
+    img: "https://www.tempatwisata.pro/users_media/3219/Harga%20Tiket%20Masuk_5.jpg",
+    maps: "https://maps.app.goo.gl/7VoyAQUcdv5Um1Ja9",
     alamat:
-      "",
+      "Pusat Penelitian Biologi – LIPI, Jl. Ir. H. Juanda No.22 - 24, RT.02/RW.08, Paledang, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16122",
   },
   {
     id: 18,
@@ -230,8 +230,7 @@ const locations = [
     desc: ".",
     img: "",
     maps: "",
-    alamat:
-      "",
+    alamat: "",
   },
   {
     id: 19,
@@ -248,29 +247,29 @@ const locations = [
   },
   {
     id: 20,
-    name: "",
+    name: "Soto Bogor Pa' Salam",
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
-    rating: "4.1",
-    loc: "",
-    desc: "",
-    img: "",
-    maps: "",
+    rating: "4.6",
+    loc: "Sukasari",
+    desc: "Soto Bogor Pa’ Salam termasuk salah satu kuliner legendaris sekaligus hidden gem di Bogor yang sering direkomendasikan warga lokal. Tempatnya sederhana, tetapi rasa kuah sotonya gurih dan khas dengan campuran daging, risol bihun, serta sambal yang bikin nagih. Lokasinya tidak terlalu mencolok sehingga banyak wisatawan belum mengetahui tempat ini. Cocok untuk kamu yang ingin mencoba suasana kuliner Bogor yang lebih autentik dan tidak terlalu ramai",
+    img: "https://i.ibb.co.com/W4c1Tp09/Whats-App-Image-2026-05-26-at-11-21-52.jpg",
+    maps: "https://maps.app.goo.gl/gu1BiaKsYP7bgo7n8",
     alamat:
-      "",
+      "Jalan Siliwangi No.298 Sukasari Bogor Tengah, RT.01/RW.07, Sukasari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16131",
   },
   {
     id: 21,
-    name: "",
+    name: "Asinan Jagung Bakar Pak Sabur",
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
-    rating: "4.1",
-    loc: "",
-    desc: "",
-    img: "",
-    maps: "",
+    rating: "3.7",
+    loc: "Suryakencana",
+    desc: " Kuliner legendaris sejak 1968 yang menyajikan keunikan jagung manis bakar pipil disiram kuah cuka cabai yang asam pedas segar, lengkap dengan kerupuk mi kuning.",
+    img: "https://lh5.googleusercontent.com/proxy/pzC6yC7BFRdMCEXBAyFxdYi_0kGcUOJn6tWyNq0AKaiOeLWasWMOwNZjWdEHr8yj6rgUbDwnHad8h0wS17VNff4AMArTDOsZnB0kezHycTsiLebBiyV1so6tMjOXWx3J8s6f6mxl98fnZI4OMH3G6Oq5SYBVl_WEb_OIVaAlvnD8SBaKcp45IJaRAes",
+    maps: "https://maps.app.goo.gl/hGbSngqH3LTyRYUP9",
     alamat:
-      "",
+      "Jl. Suryakencana No.289, RT.04/RW.02, Babakan Ps., Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16123",
   },
   {
     id: 22,
@@ -282,8 +281,7 @@ const locations = [
     desc: "",
     img: "",
     maps: "",
-    alamat:
-      "",
+    alamat: "",
   },
 ];
 
