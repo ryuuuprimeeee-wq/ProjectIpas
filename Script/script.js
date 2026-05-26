@@ -4,7 +4,7 @@ const locations = [
     name: "Kebun Raya Bogor",
     category: "Destinasi",
     catDisplay: "Destinasi Alam",
-    rating: "4.2",
+    rating: "4.7",
     loc: "Bogor Tengah",
     desc: "Kebun botani tertua di Asia Tenggara dengan ribuan koleksi tanaman tropis dan subtropis. Didirikan pada tahun 1817 oleh Caspar Georg Carl Reinwardt.",
     img: "https://i.pinimg.com/1200x/aa/0f/88/aa0f8882788f4da454c391d8985cd0f2.jpg",
@@ -17,7 +17,7 @@ const locations = [
     name: "Soto Kuning Pak Yusup",
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
-    rating: "4.7",
+    rating: "4.4",
     loc: "Suryakencana",
     desc: "Soto kuning legendaris dengan kuah santan gurih dan daging sapi pilihan. Sudah berdiri sejak puluhan tahun dan menjadi ikon kuliner Bogor.",
     img: "https://i.pinimg.com/736x/4c/82/be/4c82be3ff977d77ac74a412928a4a3b9.jpg",
@@ -33,7 +33,7 @@ const locations = [
     rating: "4.8",
     loc: "Suryakencana",
     desc: "Perayaan budaya Cap Go Meh tahunan yang menampilkan keberagaman tradisi Tionghoa dan budaya lokal Bogor.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Cap_Go_Meh_2006_%D8%AB%D8%AF%D8%A7%D8%AF.jpg/640px-Cap_Go_Meh_2006_%D8%AB%D8%AF%D8%A7%D8%AF.jpg",
+    img: "https://i.pinimg.com/736x/28/bb/4b/28bb4bf398d9f560690113cd8255a196.jpg",
     maps: "https://maps.google.com/?q=-6.6040,106.7958",
     alamat: "Jl. Suryakencana, Bogor Tengah",
   },
@@ -43,18 +43,19 @@ const locations = [
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
     rating: "4.6",
-    loc: "Pasir Kuda",
+    loc: "Bogor Barat",
     desc: "Sarapan khas Bogor: lontong daun patat dengan bumbu kacang kental, tahu, dan telur. Wajib dicoba saat ke Bogor!",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Doclang.jpg/640px-Doclang.jpg",
-    maps: "https://maps.google.com/?q=-6.5889,106.7764",
-    alamat: "Jl. Pasir Kuda, Bogor Barat",
+    img: "https://i1-c.pinimg.com/1200x/fb/e9/23/fbe923523bf4a84ead39aa4bab917def.jpg",
+    maps: "https://maps.app.goo.gl/giMzFhF1iM8FrgxAA",
+    alamat:
+      "Jl. Pasir Kuda No.23, RT.01/RW.03, Pasir Jaya, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16119",
   },
   {
     id: 5,
     name: "Curug Bidadari",
     category: "Destinasi",
     catDisplay: "Destinasi Alam",
-    rating: "4.5",
+    rating: "3.6",
     loc: "Sentul",
     desc: "Air terjun cantik dengan kolam pemandian alami yang luas, sangat cocok untuk wisata keluarga di akhir pekan.",
     img: "https://i.pinimg.com/736x/21/3d/1f/213d1f6b2b2a68d8de0d95be0e8631f5.jpg",
@@ -70,18 +71,18 @@ const locations = [
     rating: "4.0",
     loc: "Cisarua",
     desc: "Info terbaru sistem satu arah dan ganjil genap jalur Puncak setiap akhir pekan dan hari libur nasional.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Puncak_Pass.jpg/640px-Puncak_Pass.jpg",
-    maps: "https://maps.google.com/?q=-6.6994,106.9858",
+    img: "https://i.ibb.co.com/rKhq4KH3/Screenshot-2026-05-26-083653.png",
+    maps: "https://maps.app.goo.gl/SivNR4GpboVFoojc9",
     alamat: "Puncak Pass, Cisarua, Kabupaten Bogor",
-    link: "https://www.pikiran-rakyat.com/jawa-barat/pr-016782568/sistem-ganjil-genap-dan-satu-arah-di-jalur-puncak-bogor-berlaku-mulai-hari-ini",
-    tanggal: "19 Mei 2026",
+    link: "https://auto2000.co.id/berita-dan-tips/jadwal-buka-tutup-puncak",
+    tanggal: "18 Ags 2025",
   },
   {
     id: 7,
     name: "Istana Bogor",
     category: "Destinasi",
     catDisplay: "Destinasi Sejarah",
-    rating: "4.9",
+    rating: "4.5",
     loc: "Bogor Tengah",
     desc: "Istana kepresidenan bersejarah peninggalan era kolonial Belanda yang dikelilingi oleh taman Kebun Raya Bogor yang asri.",
     img: "https://i.pinimg.com/736x/ec/15/ed/ec15ed86970bacd8e0ed497ae69baba4.jpg",
@@ -94,7 +95,7 @@ const locations = [
     name: "Taman Safari Indonesia",
     category: "Destinasi",
     catDisplay: "Rekreasi Keluarga",
-    rating: "4.9",
+    rating: "4.7",
     loc: "Cisarua",
     desc: "Kebun binatang terbuka terbesar di Indonesia dengan koleksi ratusan spesies satwa dari seluruh dunia.",
     img: "https://i.pinimg.com/1200x/63/fd/77/63fd77902721b97d02c03fa6ecaf9cf0.jpg",
@@ -120,7 +121,7 @@ const locations = [
     name: "Laksa Bogor",
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
-    rating: "4.5",
+    rating: "4.6",
     loc: "Bogor Tengah",
     desc: "Kuliner legendaris khas Bogor berupa mie kuning dengan kuah oncom dan bumbu rempah yang unik dan gurih.",
     img: "https://i.pinimg.com/1200x/50/6b/fa/506bfa6fdbc40de5ceaea477e656261f.jpg",
@@ -133,7 +134,7 @@ const locations = [
     name: "Roti Unyil Venus",
     category: "Kuliner",
     catDisplay: "Oleh-oleh Khas",
-    rating: "4.8",
+    rating: "4.6",
     loc: "Bogor Timur",
     desc: "Roti mungil legendaris khas Bogor dengan berbagai pilihan rasa manis dan gurih. Sangat populer sebagai oleh-oleh khas Kota Hujan.",
     img: "https://i.pinimg.com/1200x/7a/1e/56/7a1e5686917967e4679a265c7871096e.jpg",
@@ -146,13 +147,39 @@ const locations = [
     name: "Kue Lapis Bogor Sangkuriang",
     category: "Kuliner",
     catDisplay: "Oleh-oleh Khas",
-    rating: "4.7",
+    rating: "4.9",
     loc: "Bogor Tengah",
     desc: "Kue lapis dengan tekstur lembut dan rasa yang khas, menjadi salah satu oleh-oleh wajib saat berkunjung ke Bogor.",
     img: "https://i.pinimg.com/736x/4c/a0/15/4ca015bf4f6ecc98f6370d85a2ac2d08.jpg",
     maps: "https://maps.app.goo.gl/SH2za48hUCTEzn7cA",
     alamat:
       "Jl. Raya Pajajaran No.77B, RT.04/RW.05, Tegallega, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16142",
+  },
+  {
+    id: 13,
+    name: "cimory Riverside",
+    category: "Destinasi",
+    catDisplay: "Rekreasi Keluarga",
+    rating: "4.6",
+    loc: "Cisarua",
+    desc: "Taman rekreasi keluarga dengan pemandangan alam yang indah dan berbagai fasilitas untuk menikmati waktu bersama keluarga.",
+    img: "https://i1-c.pinimg.com/1200x/d8/43/76/d843760fa89644e0141cb9ce6c5f6a01.jpg",
+    maps: "https://maps.app.goo.gl/ixkgWFiZPyhCwXb16",
+    alamat:
+      "Jl. Raya Puncak - Gadog KM.77 No.435, Leuwimalang, Kec. Cisarua, Kabupaten Bogor, Jawa Barat 16770",
+  },
+  {
+    id: 14,
+    name: "Cungkring Pak Jum'at",
+    category: "Kuliner",
+    catDisplay: "Kuliner Legendaris",
+    rating: "4.1",
+    loc: "Suryakencana",
+    desc: "Cungkring legendaris dengan kuah kaldu yang kaya rasa, berisi kikil, paru, dan jeroan sapi lainnya. Sudah ada sejak puluhan tahun lalu.",
+    img: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMdkPLG4Mee9TBHSvbzhi4fR4M7XHVK9sxVsbglaOXitoj-nSXcKX5lFn-H4413iZ8ZKwAmtMqlZRI1pQacm0_h06tj8iYiNldoKfTOQev6kuXnNFsfjlsS_zJ3KQCsQf74Ig467PeIyc=s1360-w1360-h1020-rw",
+    maps: "https://maps.app.goo.gl/WTknKcE2Wh11vrg4A",
+    alamat:
+      "Jl. Suryakencana No.285, RT.04/RW.02, Babakan Ps., Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16123",
   },
 ];
 
@@ -182,8 +209,8 @@ function scrollToCategories() {
 function toggleSidebar() {
   const sidebar = document.getElementById("mainSidebar");
   const overlay = document.getElementById("sidebarOverlay");
-  const btn     = document.getElementById("hamburgerBtn");
-  const isOpen  = sidebar.classList.contains("open");
+  const btn = document.getElementById("hamburgerBtn");
+  const isOpen = sidebar.classList.contains("open");
   if (isOpen) {
     closeSidebar();
   } else {
@@ -197,10 +224,10 @@ function toggleSidebar() {
 function closeSidebar() {
   const sidebar = document.getElementById("mainSidebar");
   const overlay = document.getElementById("sidebarOverlay");
-  const btn     = document.getElementById("hamburgerBtn");
+  const btn = document.getElementById("hamburgerBtn");
   if (sidebar) sidebar.classList.remove("open");
   if (overlay) overlay.classList.remove("active");
-  if (btn)     btn.classList.remove("open");
+  if (btn) btn.classList.remove("open");
   document.body.style.overflow = "";
 }
 
@@ -221,9 +248,11 @@ function renderCards(data) {
     const tagClass = `card-tag tag-${item.category.toLowerCase()}`;
     const displayRating = item.rating ? item.rating : "4.5";
     const displayCat = item.catDisplay ? item.catDisplay : item.category;
-    
-    const showRating = (item.category !== "Event" && item.category !== "Berita");
-    const ratingHtml = showRating ? `<span class="tag-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${displayRating}</span>` : '';
+
+    const showRating = item.category !== "Event" && item.category !== "Berita";
+    const ratingHtml = showRating
+      ? `<span class="tag-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${displayRating}</span>`
+      : "";
 
     const card = `
       <div class="card" onclick="openDetail(${item.id})">
@@ -269,9 +298,11 @@ function openDetail(id) {
         <div class="modal-tag modal-tag-${item.category.toLowerCase()}">${item.category}</div>
       </div>
       <div class="modal-body">
-        ${item.category === 'Berita' && item.tanggal
-          ? `<div class="modal-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> Dipublikasikan: ${item.tanggal}</div>`
-          : ''}
+        ${
+          item.category === "Berita" && item.tanggal
+            ? `<div class="modal-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> Dipublikasikan: ${item.tanggal}</div>`
+            : ""
+        }
         <h2 class="modal-title">${item.name}</h2>
         <div class="modal-location">
           <span class="modal-loc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
@@ -281,18 +312,19 @@ function openDetail(id) {
           </div>
         </div>
         <p class="modal-desc">${item.desc}</p>
-        ${item.category === 'Berita'
-      ? `<a href="${item.link || item.maps}" target="_blank" rel="noopener noreferrer" class="btn-maps btn-berita">
+        ${
+          item.category === "Berita"
+            ? `<a href="${item.link || item.maps}" target="_blank" rel="noopener noreferrer" class="btn-maps btn-berita">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
               Baca Berita Selengkapnya
               <svg class="maps-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>`
-      : `<a href="${item.maps}" target="_blank" rel="noopener noreferrer" class="btn-maps">
+            : `<a href="${item.maps}" target="_blank" rel="noopener noreferrer" class="btn-maps">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
               Buka di Google Maps
               <svg class="maps-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>`
-    }
+        }
       </div>
     </div>
   `;
@@ -361,7 +393,8 @@ function updateCounter(count, searchVal) {
   const counter = document.getElementById("filterCounter");
   if (!counter) return;
 
-  const catLabel = currentCategory === "Semua" ? "Semua Kategori" : currentCategory;
+  const catLabel =
+    currentCategory === "Semua" ? "Semua Kategori" : currentCategory;
   const searchLabel = searchVal ? ` · Pencarian: "${searchVal}"` : "";
   const resultWord = count === 1 ? "hasil" : "hasil";
 
