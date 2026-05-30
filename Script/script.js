@@ -222,15 +222,16 @@ const locations = [
   },
   {
     id: 18,
-    name: "",
+    name: "JungleLand Adventure Theme Park",
     category: "Destinasi",
     catDisplay: "Rekreasi Keluarga",
-    rating: "4.6",
-    loc: "",
-    desc: ".",
-    img: "",
-    maps: "",
-    alamat: "",
+    rating: "4.4",
+    loc: "Karang Tengah",
+    desc: "Taman bermain adventure yang menawarkan berbagai wahana dan aktivitas seru untuk keluarga.",
+    img: "https://i.pinimg.com/736x/ee/a6/cf/eea6cf6af8e4ac3d4438addb35ff0805.jpg",
+    maps: "https://maps.app.goo.gl/Rcrad35TASXUcj559",
+    alamat:
+      "Kawasan Sentul Nirwana, Jl. Jungle Land No.1, Karang Tengah, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810",
   },
   {
     id: 19,
