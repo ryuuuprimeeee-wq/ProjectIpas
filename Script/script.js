@@ -274,15 +274,16 @@ const locations = [
   },
   {
     id: 22,
-    name: "",
+    name: "kluwih sunda authentic",
     category: "Kuliner",
     catDisplay: "Kuliner Legendaris",
-    rating: "4.1",
-    loc: "",
-    desc: "",
-    img: "",
-    maps: "",
-    alamat: "",
+    rating: "4.4",
+    loc: "baranangsiang",
+    desc: " Restoran santai yang menyajikan hidangan tradisional khas Sunda dengan ruang terang dan teras, sangat cocok untuk makan tengah atau botram.",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/da/48/a6/kluwih-sunda-authentic.jpg?w=1400&h=800&s=1",
+    maps: "https://maps.google.com/?cid=11965950319380810554",
+    alamat:
+      "Jl. Bina Marga No.12, RT.04/RW.11, Baranangsiang, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16143",
   },
 ];
 
